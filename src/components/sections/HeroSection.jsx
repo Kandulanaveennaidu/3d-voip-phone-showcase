@@ -15,7 +15,7 @@ export default function HeroSection() {
           <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/[0.08]">
             <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
             <span className="text-xs font-mono text-white/50 uppercase tracking-[0.2em]">
-              Next Generation Platform
+              AI-Powered Unified Communications
             </span>
           </span>
         </motion.div>
@@ -27,12 +27,12 @@ export default function HeroSection() {
           transition={{ duration: 1, delay: 2.2, ease: [0.22, 1, 0.36, 1] }}
           className="text-5xl md:text-7xl lg:text-8xl font-display font-bold text-white leading-[0.95] mb-8"
         >
-          <span className="block">Build the</span>
+          <span className="block">Smarter</span>
           <span className="block bg-gradient-to-r from-primary via-accent to-neon bg-clip-text text-transparent">
-            Future
+            VoIP
           </span>
           <span className="block text-4xl md:text-5xl lg:text-6xl mt-2 font-light text-white/70">
-            of Digital Experience
+            for Modern Business
           </span>
         </motion.h1>
 
@@ -43,8 +43,9 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 2.6 }}
           className="text-base md:text-lg text-white/40 max-w-xl mb-10 font-body leading-relaxed"
         >
-          Immerse yourself in a cinematic 3D world where cutting-edge technology
-          meets breathtaking design. A new era of digital interaction.
+          Empower your team with crystal-clear HD voice, intelligent call
+          routing, and AI-powered communications — all in one platform. Trusted
+          by 100,000+ businesses worldwide.
         </motion.p>
 
         {/* CTA Buttons */}
@@ -59,14 +60,14 @@ export default function HeroSection() {
             whileTap={{ scale: 0.95 }}
             className="px-8 py-3.5 bg-gradient-to-r from-primary to-accent rounded-full text-white font-medium text-sm tracking-wide shadow-lg shadow-primary/25"
           >
-            Explore Experience
+            Request a Demo
           </motion.button>
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="px-8 py-3.5 bg-white/[0.04] border border-white/[0.1] rounded-full text-white/70 font-medium text-sm tracking-wide hover:bg-white/[0.08] transition-colors"
           >
-            Watch Demo
+            Talk to Sales
           </motion.button>
         </motion.div>
 

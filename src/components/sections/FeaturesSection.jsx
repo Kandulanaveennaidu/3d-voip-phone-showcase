@@ -5,45 +5,45 @@ import { AnimatedTitle, AnimatedParagraph, FadeIn } from "../ui/AnimatedText";
 
 const features = [
   {
-    icon: "⚡",
-    title: "Ultra-Low Latency",
+    icon: "📞",
+    title: "HD Voice Calling",
     description:
-      "Sub-millisecond response times powered by edge computing infrastructure distributed across 150+ global nodes.",
+      "Crystal-clear voice quality with advanced noise cancellation and wideband audio across all devices and locations.",
     color: "from-primary to-purple-400",
   },
   {
-    icon: "🛡️",
-    title: "Quantum Encryption",
+    icon: "🤖",
+    title: "AI Call Summaries",
     description:
-      "Military-grade, quantum-resistant encryption protecting every byte of data in transit and at rest.",
+      "Automatically transcribe and summarize every call with AI-powered insights, action items, and sentiment analysis.",
     color: "from-accent to-blue-400",
   },
   {
-    icon: "🤖",
-    title: "AI-Powered Routing",
+    icon: "📊",
+    title: "Smart Call Routing",
     description:
-      "Intelligent traffic routing that adapts in real-time using machine learning for optimal performance.",
+      "Intelligent ACD and skill-based routing that directs callers to the right agent instantly, reducing wait times by 60%.",
     color: "from-neon to-pink-400",
   },
   {
-    icon: "🌐",
-    title: "Global Mesh Network",
+    icon: "🎯",
+    title: "Interactive IVR",
     description:
-      "Decentralized architecture ensuring 99.999% uptime with automatic failover and self-healing capabilities.",
+      "Build powerful multi-level IVR menus with drag-and-drop simplicity. Auto-attendant handles calls 24/7.",
     color: "from-green-400 to-accent",
   },
   {
-    icon: "📊",
-    title: "Real-Time Analytics",
+    icon: "🌐",
+    title: "Video Conferencing",
     description:
-      "Deep insights into network performance with customizable dashboards and predictive analytics.",
+      "Vitel Meet delivers HD video meetings with screen sharing, recording, and AI meeting assistant built in.",
     color: "from-yellow-400 to-primary",
   },
   {
     icon: "🔗",
-    title: "Seamless Integration",
+    title: "CRM Integrations",
     description:
-      "RESTful APIs and SDKs for every major platform, enabling integration in minutes, not months.",
+      "Seamlessly connect with Salesforce, HubSpot, Zendesk, Slack, and 100+ apps via API and Zapier.",
     color: "from-primary to-accent",
   },
 ];
@@ -59,14 +59,14 @@ export default function FeaturesSection() {
         <div className="text-center mb-20">
           <SectionBadge>Features</SectionBadge>
           <AnimatedTitle className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6">
-            Engineered for Excellence
+            Powerful VoIP Features
           </AnimatedTitle>
           <AnimatedParagraph
             delay={0.2}
             className="text-white/40 text-lg max-w-2xl mx-auto"
           >
-            Every feature is meticulously crafted to deliver uncompromising
-            performance, security, and reliability at any scale.
+            Every feature is designed to help your business communicate smarter,
+            faster, and more efficiently across every channel.
           </AnimatedParagraph>
         </div>
 

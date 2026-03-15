@@ -5,33 +5,33 @@ import { AnimatedTitle, AnimatedParagraph, FadeIn } from "../ui/AnimatedText";
 
 const caseStudies = [
   {
-    client: "TechGlobal Corp",
-    industry: "Enterprise SaaS",
-    result: "300% throughput increase",
+    client: "Pacific Health Group",
+    industry: "Healthcare",
+    result: "HIPAA-compliant VoIP rollout",
     description:
-      "Migrated from legacy infrastructure to Nexus Core, achieving 3x throughput with 60% lower costs.",
-    metric: "3x",
-    metricLabel: "Performance Gain",
+      "Migrated 500+ extensions to Vitel Global’s cloud PBX, achieving HIPAA compliance and cutting telecom costs by 45%.",
+    metric: "45%",
+    metricLabel: "Cost Reduction",
     gradient: "from-primary to-purple-500",
   },
   {
-    client: "MediConnect",
-    industry: "Healthcare",
-    result: "HIPAA-compliant real-time",
+    client: "Apex Financial Services",
+    industry: "Financial Services",
+    result: "Unified 12 offices on one platform",
     description:
-      "Built a HIPAA-compliant telehealth platform serving 2M+ patients with zero-downtime reliability.",
-    metric: "2M+",
-    metricLabel: "Patients Served",
+      "Consolidated 12 branch offices onto a single Vitel Global system with smart call routing and real-time analytics.",
+    metric: "12",
+    metricLabel: "Offices Unified",
     gradient: "from-accent to-blue-500",
   },
   {
-    client: "StreamVerse",
-    industry: "Media & Entertainment",
-    result: "Global live streaming",
+    client: "NovaTech Solutions",
+    industry: "Technology",
+    result: "80% faster customer response",
     description:
-      "Powered live events reaching 50M concurrent viewers with sub-second latency worldwide.",
-    metric: "50M",
-    metricLabel: "Concurrent Viewers",
+      "Deployed AI call summaries and IVR automation, reducing average customer response time from 5 minutes to under 1.",
+    metric: "80%",
+    metricLabel: "Faster Response",
     gradient: "from-neon to-red-400",
   },
 ];
@@ -46,14 +46,14 @@ export default function CaseStudiesSection() {
         <div className="text-center mb-20">
           <SectionBadge>Case Studies</SectionBadge>
           <AnimatedTitle className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6">
-            Proven at Scale
+            Trusted by Businesses Worldwide
           </AnimatedTitle>
           <AnimatedParagraph
             delay={0.2}
             className="text-white/40 text-lg max-w-2xl mx-auto"
           >
-            See how industry leaders leverage Nexus to transform their
-            operations and deliver exceptional experiences.
+            See how companies across industries use Vitel Global to transform
+            their business communications.
           </AnimatedParagraph>
         </div>
 

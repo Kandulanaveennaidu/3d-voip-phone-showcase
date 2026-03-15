@@ -2,16 +2,28 @@ import { motion } from "framer-motion";
 import { FadeIn } from "../ui/AnimatedText";
 
 const footerLinks = {
-  Product: [
-    "Features",
-    "Pricing",
-    "Case Studies",
-    "Changelog",
-    "Documentation",
+  Products: [
+    "Business Phone",
+    "Vitel Meet",
+    "Team Messaging",
+    "Communication APIs",
+    "SIP Trunking",
   ],
-  Company: ["About", "Blog", "Careers", "Press", "Partners"],
-  Resources: ["API Reference", "SDKs", "Status Page", "Community", "Support"],
-  Legal: ["Privacy", "Terms", "Security", "Compliance"],
+  Solutions: [
+    "Small Business",
+    "Enterprise",
+    "Healthcare",
+    "Finance",
+    "Remote Teams",
+  ],
+  Resources: [
+    "Documentation",
+    "API Reference",
+    "System Status",
+    "Blog",
+    "Support",
+  ],
+  Company: ["About Us", "Careers", "Partners", "Privacy", "Terms"],
 };
 
 export default function FooterSection() {
@@ -23,17 +35,16 @@ export default function FooterSection() {
             {/* Brand */}
             <div className="lg:col-span-2">
               <div className="flex items-center gap-2 mb-4">
-                <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">N</span>
-                </div>
-                <span className="text-white font-display font-semibold text-xl">
-                  NEXUS
-                </span>
+                <img
+                  src="/vitelglobal-logo.svg"
+                  alt="Vitel Global"
+                  className="h-8 w-auto brightness-0 invert"
+                />
               </div>
               <p className="text-white/30 text-sm leading-relaxed max-w-xs mb-6">
-                Building the future of digital connectivity. Powering the
-                world's most demanding applications with next-generation
-                infrastructure.
+                AI-powered unified communications platform for modern
+                businesses. Voice, video, messaging, and APIs — all in one
+                place.
               </p>
               <div className="flex gap-3">
                 {["X", "in", "GH", "YT"].map((social, i) => (
@@ -74,7 +85,8 @@ export default function FooterSection() {
         {/* Bottom bar */}
         <div className="pt-8 border-t border-white/[0.04] flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-white/20 text-xs font-body">
-            &copy; 2026 NEXUS. All rights reserved.
+            &copy; {new Date().getFullYear()} Vitel Global Communications LLC.
+            All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             <a

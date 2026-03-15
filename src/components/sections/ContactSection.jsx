@@ -15,14 +15,14 @@ export default function ContactSection() {
           <div>
             <SectionBadge>Contact</SectionBadge>
             <AnimatedTitle className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6 leading-tight">
-              Let's Build Something Incredible
+              Let's Transform Your Communications
             </AnimatedTitle>
             <AnimatedParagraph
               delay={0.2}
               className="text-white/40 text-lg leading-relaxed mb-10"
             >
-              Ready to transform your digital infrastructure? Our team of
-              experts is here to help you architect the perfect solution.
+              Ready to upgrade to a smarter phone system? Our VoIP experts will
+              help you find the perfect plan for your business.
             </AnimatedParagraph>
 
             <FadeIn delay={0.3}>
@@ -31,15 +31,13 @@ export default function ContactSection() {
                   <div className="w-10 h-10 rounded-xl bg-white/[0.04] border border-white/[0.06] flex items-center justify-center text-sm">
                     ✉
                   </div>
-                  <span className="text-sm">hello@nexus.dev</span>
+                  <span className="text-sm">sales@vitelglobal.com</span>
                 </div>
                 <div className="flex items-center gap-4 text-white/40">
                   <div className="w-10 h-10 rounded-xl bg-white/[0.04] border border-white/[0.06] flex items-center justify-center text-sm">
                     📍
                   </div>
-                  <span className="text-sm">
-                    San Francisco, CA · London · Singapore
-                  </span>
+                  <span className="text-sm">Dallas, TX · Hyderabad, India</span>
                 </div>
               </div>
             </FadeIn>
@@ -100,7 +98,7 @@ export default function ContactSection() {
                   type="submit"
                   className="w-full py-3.5 bg-gradient-to-r from-primary to-accent rounded-xl text-white font-medium text-sm shadow-lg shadow-primary/20"
                 >
-                  Send Message
+                  Request a Callback
                 </motion.button>
               </form>
             </GlassCard>

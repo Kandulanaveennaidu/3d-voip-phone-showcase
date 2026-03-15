@@ -6,51 +6,46 @@ import { AnimatedTitle, AnimatedParagraph, FadeIn } from "../ui/AnimatedText";
 const services = [
   {
     number: "01",
-    title: "Cloud Infrastructure",
+    title: "Business Phone System",
     description:
-      "Scalable, secure cloud solutions with automatic provisioning and global distribution.",
+      "Complete cloud PBX with HD voice, auto-attendant, call recording, voicemail-to-email, and 70+ enterprise features.",
     items: [
-      "Auto-scaling clusters",
-      "CDN integration",
-      "Managed databases",
-      "Serverless functions",
+      "HD Voice Calling",
+      "Auto-Attendant / IVR",
+      "Call Recording",
+      "Voicemail Transcription",
     ],
   },
   {
     number: "02",
-    title: "Communication APIs",
+    title: "Vitel Meet",
     description:
-      "Enterprise-grade voice, video, and messaging APIs with unmatched reliability.",
+      "HD video conferencing with AI meeting assistant, screen sharing, recording, and real-time transcription.",
     items: [
-      "Voice SDK",
-      "Video conferencing",
-      "Chat & messaging",
-      "Push notifications",
+      "HD Video Meetings",
+      "AI Meeting Assistant",
+      "Screen Sharing",
+      "Meeting Recording",
     ],
   },
   {
     number: "03",
-    title: "Network Optimization",
+    title: "Team Messaging",
     description:
-      "AI-driven network management that ensures peak performance across all touchpoints.",
+      "Real-time team collaboration with channels, file sharing, presence indicators, and cross-device sync.",
     items: [
-      "Traffic analysis",
-      "Route optimization",
-      "QoS management",
-      "DDoS mitigation",
+      "Channels & DMs",
+      "File Sharing",
+      "Presence Indicators",
+      "Cross-Device Sync",
     ],
   },
   {
     number: "04",
-    title: "Security & Compliance",
+    title: "Communication APIs",
     description:
-      "End-to-end security covering encryption, access control, and regulatory compliance.",
-    items: [
-      "Zero-trust architecture",
-      "SOC 2 / HIPAA",
-      "Threat detection",
-      "Audit logging",
-    ],
+      "Programmable voice, SMS, and messaging APIs for developers to embed communications into any application.",
+    items: ["Voice API", "SMS API", "WebRTC SDK", "Webhook Events"],
   },
 ];
 
@@ -64,14 +59,14 @@ export default function ServicesSection() {
         <div className="text-center mb-20">
           <SectionBadge>Services</SectionBadge>
           <AnimatedTitle className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6">
-            End-to-End Solutions
+            Complete Communication Suite
           </AnimatedTitle>
           <AnimatedParagraph
             delay={0.2}
             className="text-white/40 text-lg max-w-2xl mx-auto"
           >
-            From infrastructure to security, we provide comprehensive services
-            that power the world's most demanding applications.
+            Everything your business needs to communicate — voice, video,
+            messaging, and APIs — in one unified platform.
           </AnimatedParagraph>
         </div>
 

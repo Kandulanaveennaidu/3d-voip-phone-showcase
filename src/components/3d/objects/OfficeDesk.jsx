@@ -10,9 +10,9 @@ export default function OfficeDesk({
   autoRotate = true,
   floatIntensity = 0.4,
   floatSpeed = 1.5,
-  emissiveColor = "#6C63FF",
-  emissiveIntensity = 0.15,
-  envMapIntensity = 1.8,
+  emissiveColor = "#4F8EF7",
+  emissiveIntensity = 0.2,
+  envMapIntensity = 2.2,
 }) {
   const group = useRef();
   const { scene } = useGLTF(
@@ -36,8 +36,8 @@ export default function OfficeDesk({
         mat.envMapIntensity = envMapIntensity;
         mat.emissive = new THREE.Color(emissiveColor);
         mat.emissiveIntensity = emissiveIntensity;
-        mat.roughness = Math.max(mat.roughness * 0.85, 0.05);
-        mat.metalness = Math.min(mat.metalness + 0.1, 1.0);
+        mat.roughness = Math.max(mat.roughness * 0.7, 0.03);
+        mat.metalness = Math.min(mat.metalness + 0.15, 1.0);
         mat.toneMapped = true;
         mat.needsUpdate = true;
       }
@@ -81,26 +81,34 @@ export default function OfficeDesk({
         position={[0, 5 * scale, 3 * scale]}
         angle={0.45}
         penumbra={1}
-        intensity={2.5}
-        color="#ffffff"
+        intensity={3}
+        color="#f0f4ff"
         castShadow
         shadow-mapSize-width={1024}
         shadow-mapSize-height={1024}
       />
-      {/* Violet fill */}
+      {/* Blue brand fill */}
       <pointLight
         position={[-2 * scale, 1.5 * scale, 2 * scale]}
-        intensity={0.5}
-        color="#6C63FF"
+        intensity={0.6}
+        color="#4F8EF7"
         distance={8 * scale}
         decay={2}
       />
       {/* Cyan rim */}
       <pointLight
         position={[2 * scale, 0.5 * scale, -2 * scale]}
-        intensity={0.35}
-        color="#00F0FF"
+        intensity={0.45}
+        color="#00D4FF"
         distance={8 * scale}
+        decay={2}
+      />
+      {/* Warm accent from below */}
+      <pointLight
+        position={[0, -1 * scale, 1 * scale]}
+        intensity={0.2}
+        color="#F7941D"
+        distance={6 * scale}
         decay={2}
       />
     </group>

@@ -4,10 +4,10 @@ import SectionBadge from "../ui/SectionBadge";
 import { AnimatedTitle, AnimatedParagraph, FadeIn } from "../ui/AnimatedText";
 
 const stats = [
-  { value: "99.9%", label: "Uptime Guaranteed" },
-  { value: "150+", label: "Global Locations" },
-  { value: "10M+", label: "Active Users" },
-  { value: "24/7", label: "Expert Support" },
+  { value: "99.999%", label: "Uptime SLA" },
+  { value: "100+", label: "Countries Served" },
+  { value: "100K+", label: "Businesses Trust Us" },
+  { value: "25M+", label: "Daily Call Minutes" },
 ];
 
 export default function AboutSection() {
@@ -23,26 +23,25 @@ export default function AboutSection() {
             <SectionBadge>About Us</SectionBadge>
 
             <AnimatedTitle className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6 leading-tight">
-              Redefining Digital Connectivity
+              Unified Communications, Simplified
             </AnimatedTitle>
 
             <AnimatedParagraph
               delay={0.2}
               className="text-white/40 text-lg leading-relaxed mb-6"
             >
-              We are pioneers in next-generation communication technology,
-              building infrastructure that connects billions of people across
-              the globe with unprecedented speed and reliability.
+              Vitel Global delivers an AI-powered unified communications
+              platform that brings voice, video, messaging, and collaboration
+              together for modern businesses of every size.
             </AnimatedParagraph>
 
             <AnimatedParagraph
               delay={0.3}
               className="text-white/30 leading-relaxed mb-10"
             >
-              Our platform leverages cutting-edge AI, quantum-resistant
-              encryption, and distributed edge computing to deliver experiences
-              that feel instantaneous. From enterprise solutions to consumer
-              applications, we're shaping how the world communicates.
+              From HD voice calling and intelligent IVR to AI call summaries and
+              seamless CRM integrations, our cloud PBX platform empowers teams
+              to communicate smarter — whether in-office, remote, or on the go.
             </AnimatedParagraph>
 
             <FadeIn delay={0.4}>
@@ -51,7 +50,7 @@ export default function AboutSection() {
                 whileTap={{ scale: 0.95 }}
                 className="px-6 py-3 bg-white/[0.04] border border-white/[0.1] rounded-full text-white/70 text-sm font-medium hover:bg-white/[0.08] transition-colors"
               >
-                Learn Our Story →
+                Why Vitel Global →
               </motion.button>
             </FadeIn>
           </div>

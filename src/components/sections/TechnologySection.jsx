@@ -5,65 +5,65 @@ import { AnimatedTitle, AnimatedParagraph, FadeIn } from "../ui/AnimatedText";
 
 const techStack = [
   {
-    name: "Edge Computing",
-    detail: "Distributed processing at 150+ edge locations",
-    icon: "⚙️",
+    name: "Cloud PBX",
+    detail: "Fully managed business phone system in the cloud",
+    icon: "☁️",
   },
   {
-    name: "AI / ML Pipeline",
-    detail: "Real-time inference with custom neural networks",
-    icon: "🧠",
-  },
-  {
-    name: "Quantum-Safe TLS",
-    detail: "Post-quantum cryptographic protocols",
-    icon: "🔐",
+    name: "SIP Trunking",
+    detail: "Reliable, scalable SIP connectivity for any PBX",
+    icon: "📞",
   },
   {
     name: "WebRTC Engine",
-    detail: "Custom media engine with SVC codec support",
+    detail: "Browser-native calling with zero plugins required",
     icon: "📡",
   },
   {
-    name: "gRPC Mesh",
-    detail: "High-performance inter-service communication",
-    icon: "🔄",
+    name: "AI / ML Pipeline",
+    detail: "Real-time speech analytics and call intelligence",
+    icon: "🧠",
   },
   {
-    name: "Time-Series DB",
-    detail: "Custom TSDB for real-time analytics at scale",
-    icon: "📊",
+    name: "End-to-End Encryption",
+    detail: "TLS/SRTP securing every call and message",
+    icon: "🔐",
+  },
+  {
+    name: "Communication APIs",
+    detail: "Voice, SMS, and messaging APIs for developers",
+    icon: "🔗",
   },
 ];
 
 const metrics = [
-  { label: "Requests/sec", value: "2.4M" },
-  { label: "P99 Latency", value: "<3ms" },
-  { label: "Data Centers", value: "42" },
+  { label: "Calls / Hour", value: "1.5M+" },
+  { label: "Voice Latency", value: "<50ms" },
+  { label: "Countries", value: "100+" },
   { label: "Availability", value: "99.999%" },
 ];
 
 export default function TechnologySection() {
   return (
     <section
-      id="technology"
+      id="products"
       className="relative min-h-screen flex items-center py-32"
     >
       <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Left */}
           <div>
-            <SectionBadge>Technology</SectionBadge>
+            <SectionBadge>Products</SectionBadge>
             <AnimatedTitle className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6 leading-tight">
-              Powered by Next-Gen Infrastructure
+              Built on Enterprise-Grade VoIP Technology
             </AnimatedTitle>
             <AnimatedParagraph
               delay={0.2}
               className="text-white/40 text-lg leading-relaxed mb-10"
             >
-              Our proprietary technology stack is built from the ground up for
-              the demands of tomorrow. Every layer optimized for speed,
-              security, and scalability.
+              Our cloud communications platform is engineered from the ground up
+              for reliability, clarity, and scale — serving 1.5 million calls
+              per hour across 100+ countries.
             </AnimatedParagraph>
 
             {/* Metrics */}
@@ -92,24 +92,22 @@ export default function TechnologySection() {
                   <div className="w-2.5 h-2.5 rounded-full bg-red-500/80" />
                   <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/80" />
                   <div className="w-2.5 h-2.5 rounded-full bg-green-500/80" />
-                  <span className="text-white/20 ml-2">nexus-cli</span>
+                  <span className="text-white/20 ml-2">vitel-cli</span>
                 </div>
                 <div className="space-y-1 text-white/40">
                   <p>
-                    <span className="text-accent">$</span> nexus deploy --region
-                    global
+                    <span className="text-accent">$</span> vitel provision
+                    --plan business-pro
                   </p>
-                  <p className="text-white/20">
-                    ⠋ Deploying to 42 edge nodes...
-                  </p>
+                  <p className="text-white/20">⠋ Provisioning Cloud PBX...</p>
                   <p className="text-green-400/60">
-                    ✓ Deployed in 2.3s across all regions
+                    ✓ PBX ready · 50 extensions · IVR configured
                   </p>
                   <p>
-                    <span className="text-accent">$</span> nexus status
+                    <span className="text-accent">$</span> vitel status
                   </p>
                   <p className="text-white/20">
-                    ℹ All systems nominal · 2.4M req/s · P99: 2.1ms
+                    ℹ All systems nominal · 1.5M calls/hr · Latency: 32ms
                   </p>
                 </div>
               </div>

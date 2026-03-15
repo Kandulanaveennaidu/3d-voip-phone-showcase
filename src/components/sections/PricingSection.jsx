@@ -6,16 +6,16 @@ import { AnimatedTitle, AnimatedParagraph } from "../ui/AnimatedText";
 
 const plans = [
   {
-    name: "Starter",
-    price: "$49",
-    period: "/month",
-    description: "Perfect for small teams and startups getting started.",
+    name: "Essential",
+    price: "$19",
+    period: "/user/mo",
+    description: "Perfect for small teams getting started with cloud phone.",
     features: [
-      "10,000 API calls/month",
-      "2 Edge locations",
-      "Basic analytics",
-      "Community support",
-      "SSL included",
+      "Unlimited domestic calling",
+      "HD Voice quality",
+      "Auto-attendant",
+      "Voicemail-to-email",
+      "Mobile & desktop apps",
     ],
     cta: "Start Free Trial",
     popular: false,
@@ -23,19 +23,19 @@ const plans = [
   },
   {
     name: "Professional",
-    price: "$199",
-    period: "/month",
-    description: "For growing businesses that need reliability at scale.",
+    price: "$29",
+    period: "/user/mo",
+    description: "For growing teams that need advanced call management.",
     features: [
-      "500,000 API calls/month",
-      "25 Edge locations",
-      "Advanced analytics",
-      "Priority support (24/7)",
-      "Custom domains",
-      "Team collaboration",
-      "SLA guarantee",
+      "Everything in Essential",
+      "Call recording & analytics",
+      "IVR / multi-level menus",
+      "CRM integrations",
+      "Vitel Meet (100 participants)",
+      "AI Call Summaries",
+      "Priority 24/7 support",
     ],
-    cta: "Get Started",
+    cta: "Start Free Trial",
     popular: true,
     gradient: "from-primary/20 to-accent/10",
   },
@@ -43,16 +43,16 @@ const plans = [
     name: "Enterprise",
     price: "Custom",
     period: "",
-    description: "For organizations requiring maximum performance and control.",
+    description: "For large organizations needing full control and compliance.",
     features: [
-      "Unlimited API calls",
-      "All 150+ Edge locations",
-      "Real-time analytics",
-      "Dedicated support engineer",
-      "Custom SLAs",
-      "On-premise option",
-      "SOC 2 / HIPAA compliance",
-      "White-label solution",
+      "Everything in Professional",
+      "Unlimited participants",
+      "Dedicated account manager",
+      "Custom SLA (99.999%)",
+      "HIPAA / SOC 2 compliance",
+      "SIP trunking options",
+      "API access & webhooks",
+      "White-label available",
     ],
     cta: "Contact Sales",
     popular: false,
@@ -72,14 +72,14 @@ export default function PricingSection() {
         <div className="text-center mb-16">
           <SectionBadge>Pricing</SectionBadge>
           <AnimatedTitle className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6">
-            Simple, Transparent Pricing
+            Plans That Scale With You
           </AnimatedTitle>
           <AnimatedParagraph
             delay={0.2}
             className="text-white/40 text-lg max-w-2xl mx-auto mb-8"
           >
-            Choose the plan that fits your needs. All plans include a 14-day
-            free trial.
+            Transparent pricing with no hidden fees. All plans include a 14-day
+            free trial with full features.
           </AnimatedParagraph>
 
           {/* Toggle */}

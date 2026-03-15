@@ -15,7 +15,7 @@ export default function Navbar() {
   const navItems = [
     "About",
     "Features",
-    "Technology",
+    "Products",
     "Services",
     "Pricing",
     "Contact",
@@ -41,16 +41,15 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <motion.div
-          className="flex items-center gap-2 cursor-pointer"
-          whileHover={{ scale: 1.05 }}
+          className="flex items-center cursor-pointer"
+          whileHover={{ scale: 1.03 }}
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         >
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-            <span className="text-white font-bold text-sm">N</span>
-          </div>
-          <span className="text-white font-display font-semibold text-xl tracking-tight">
-            NEXUS
-          </span>
+          <img
+            src="/vitelglobal-logo.svg"
+            alt="Vitel Global"
+            className="h-9 w-auto brightness-0 invert"
+          />
         </motion.div>
 
         {/* Desktop Nav */}
@@ -71,7 +70,7 @@ export default function Navbar() {
             whileTap={{ scale: 0.95 }}
             className="px-5 py-2 bg-gradient-to-r from-primary to-accent rounded-full text-white text-sm font-medium"
           >
-            Get Started
+            Book a Demo
           </motion.button>
         </div>
 

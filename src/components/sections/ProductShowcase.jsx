@@ -7,45 +7,35 @@ import DeskModelViewer from "../3d/objects/DeskModelViewer";
 
 const products = [
   {
-    id: "nexus-core",
-    name: "Nexus Core",
-    category: "Infrastructure",
+    id: "vitel-phone",
+    name: "Business Phone",
+    category: "Cloud PBX",
     description:
-      "The foundational platform powering all Nexus services. Enterprise-grade reliability with consumer-grade simplicity.",
+      "A full-featured cloud phone system with HD voice, intelligent routing, auto-attendant, and 70+ enterprise calling features.",
     features: [
-      "Auto-scaling",
-      "Multi-region",
-      "Zero-downtime deploys",
-      "Built-in CDN",
+      "HD Voice",
+      "Call Recording",
+      "IVR Menus",
+      "Voicemail Transcription",
     ],
     gradient: "from-primary to-purple-500",
   },
   {
-    id: "nexus-connect",
-    name: "Nexus Connect",
-    category: "Communication",
+    id: "vitel-meet",
+    name: "Vitel Meet",
+    category: "Video Conferencing",
     description:
-      "Real-time communication SDK supporting voice, video, and messaging with crystal-clear quality.",
-    features: [
-      "HD Voice/Video",
-      "E2E Encryption",
-      "Screen sharing",
-      "Recording",
-    ],
+      "HD video meetings with AI-powered transcription, screen sharing, virtual backgrounds, and meeting recording.",
+    features: ["HD Video", "AI Transcription", "Screen Sharing", "Recording"],
     gradient: "from-accent to-blue-500",
   },
   {
-    id: "nexus-mesh",
-    name: "Nexus Mesh",
-    category: "Networking",
+    id: "vitel-api",
+    name: "Vitel APIs",
+    category: "Developer Platform",
     description:
-      "Intelligent network mesh that optimizes traffic routing using AI-powered predictive algorithms.",
-    features: [
-      "AI Routing",
-      "Load balancing",
-      "DDoS protection",
-      "Traffic analytics",
-    ],
+      "Programmable voice, SMS, and messaging APIs that let developers embed communications directly into any app or workflow.",
+    features: ["Voice API", "SMS Gateway", "WebRTC SDK", "Webhook Events"],
     gradient: "from-neon to-red-400",
   },
 ];
@@ -63,14 +53,14 @@ export default function ProductShowcase() {
         <div className="text-center mb-16">
           <SectionBadge>Products</SectionBadge>
           <AnimatedTitle className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6">
-            Interactive Product Showcase
+            Explore Our Products
           </AnimatedTitle>
           <AnimatedParagraph
             delay={0.2}
             className="text-white/40 text-lg max-w-2xl mx-auto"
           >
-            Explore our suite of products designed to transform how you build,
-            connect, and scale.
+            A unified suite of communication tools designed to keep your
+            business connected, productive, and ahead.
           </AnimatedParagraph>
         </div>
 
